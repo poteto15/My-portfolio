@@ -1,0 +1,99 @@
+:root{
+    --maintext-color: hsl(229, 23%, 23%);
+    --subtext-color: hsl(227, 10%, 46%);
+}
+
+body{
+    min-height: 100vh;
+    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: -400px -400px, calc(100% + 400px) calc(100% + 300px);
+    background-size: 800px, 800px;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.Profile{
+    width: 500px;
+    overflow: hidden;
+    margin: 50px auto;
+    border-radius: 20px;
+    background-color: hsl(225, 10%, 92%);
+}
+
+.background{
+    position: relative;
+    height: 150px;
+    background-image: url("images/bg-pattern-card.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+.icon img{
+    position: absolute;
+    bottom: -55px;
+    left: 180px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid hsl(225, 10%, 92%);
+    object-fit: cover;
+    text-align: center;
+}
+
+.profile-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+h1{ 
+    text-align: center;
+    margin: 0;
+    color: var(--maintext-color);
+}
+
+h2{
+    text-align: center;
+    margin: 0;
+    color: var(--subtext-color);
+}
+h3{
+    text-align: center;
+    border-bottom: 0.5px solid var(--subtext-color);
+    padding-bottom: 50px;
+    color: var(--subtext-color);
+}
+
+p{
+    text-align: center;
+    color: var(--subtext-color);
+}
+
+.math1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    gap: 20px;
+}
+.math1 div{
+    display: grid;
+    gap: 5px;
+}
+
+@media(min-width:1440px) {
+    .Profile{
+        width: 400px;
+        padding:2rem;
+    }
+
+    .Profile h1, h2, h3{
+        font-size: 1.5rem;
+    }
+
+    .Profile p{
+        font-size: 1rem;
+    }
+}
