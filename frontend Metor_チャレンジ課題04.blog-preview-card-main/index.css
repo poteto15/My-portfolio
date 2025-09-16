@@ -6,6 +6,7 @@
 
 body{
     background-color: var(---background-color);
+    padding: 200px;
 }
 
 .card{
@@ -61,4 +62,5 @@ body{
     margin-left: 10px;
     margin-top: 5px;
 }
+
 
