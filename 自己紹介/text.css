@@ -1,0 +1,40 @@
+
+:root{
+    --main-color: lightblue;
+    --font-size: 16px;
+}
+
+body{
+    display: flex;
+    background-color: var(--main-color);
+}
+.name{
+    border-radius: 15px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+}
+.img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+ul{
+    padding-left: 30px;
+}
+
+@media(min-width:1440px) {
+    .card{
+        width: 400px;
+        padding:2rem;
+    }
+
+    .card h1{
+        font-size: 1.5rem;
+    }
+
+    .card p{
+        font-size: 1rem;
+    }
+}
